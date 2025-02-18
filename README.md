@@ -1,10 +1,10 @@
-# [atet](https://github.com/atet) / [learn](https://github.com/atet/learn/blob/master/README.md#atet--learn) / [**_codec_**](https://github.com/atet/learn/blob/master/codec/README.md#atet--learn--codec)
+# [atet](https://github.com/atet) / [**_codec_**](https://github.com/atet/codec?tab=readme-ov-file#atet--codec)
 
 [![.img/logo_ffmpeg.png](.img/logo_ffmpeg.png)](#nolink)
 
 # Introduction to Video Transcoding
 
-**This is part of a two-tutorial series on capturing and transcoding videos: I recommend to first finish [Atet's 15 Minute Tutorial on Screen Capture](https://github.com/atet/learn/blob/master/capture/README.md#atet--learn--capture) to put this content in better context**
+**This is part of a two-tutorial series on capturing and transcoding videos: I recommend to first finish [Atet's 15 Minute Tutorial on Screen Capture](https://github.com/atet/capture?tab=readme-ov-file#atet--capture) to put this content in better context**
 
 **Estimated time to completion: 15 minutes**
 
@@ -49,15 +49,15 @@
 ## 1. Installation
 
 * We will use ffmpeg, a free, open-source command line interface (CLI) program for video transcoding
-* Download the latest Windows 64-bit version of `ffmpeg` (built for Windows by Zeranoe): https://ffmpeg.zeranoe.com/builds/
+* Download the latest `*.zip` version of `ffmpeg` (built for Windows by Gyan.dev): https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-7.0.2-essentials_build.zip
 
 ![.img/step01a.png](.img/step01a.png)(#nolink)
 
-* Extract the downloaded `ZIP` file to "`C:\Program Files`" (this requires administrative permission)
+* Extract the downloaded ZIP file to "`C:\Program Files`" (this requires administrative permission)
 
 ![.img/step01b.png](.img/step01b.png)(#nolink)
 
-* The critical file `ffmpeg.exe` should now be extracted to the path "`C:\Program Files\ffmpeg-<VERSION>-win64-static\bin`"
+* The critical file `ffmpeg.exe` should now be extracted to the path "`C:\Program Files\ffmpeg-<VERSION>-essentials_build\bin`"
    * **This program can only be used in Command Prompt**, a.k.a. the command line interface (CLI) for Windows
 
 [![.img/step01c.png](.img/step01c.png)](#nolink)
@@ -69,9 +69,9 @@
 
 [![.img/step01d.png](.img/step01d.png)](#nolink)
 
-* In the bottom window pane "System variables", click on the variable **Path** and click on Edit
-* Select "New" and new text entry will be added at the bottom of the list
-* Input the path to `ffmpeg.exe` that we extracted earlier: "`C:\Program Files\ffmpeg-<VERSION>-win64-static\bin`"
+* In the bottom window pane "System variables", click on the variable "**Path**" and click on "Edit"
+* Select "New" and new blank text entry will be added at the bottom of the list
+* Add the path to that `ffmpeg.exe` file from earlier: "`C:\Program Files\ffmpeg-<VERSION>-essentials_build\bin\`"
 * Click on OK to exit all of the windows
 
 [![.img/step01e.png](.img/step01e.png)](#nolink)
@@ -93,8 +93,8 @@
 
 * We will use a short video file and an audio file in this tutorial
 * Make a new folder on your desktop called "Example" and download the following two files there:
-   * Video<sup>[[1]](#acknowledgments)</sup>: [Ferris Wheel - 18386.mp4](https://github.com/atet/learn/blob/master/codec/.video/Ferris%20Wheel%20-%2018386.mp4?raw=true)
-   * Audio<sup>[[2]](#acknowledgments)</sup>: [Chuzausen_-\_06\_-_Raro_Bueno.mp3](https://github.com/atet/learn/blob/master/codec/.video/Chuzausen_-_06_-_Raro_Bueno.mp3?raw=true)
+   * Video<sup>[[1]](#acknowledgments)</sup>: [Ferris Wheel - 18386.mp4](https://github.com/atet/codec/blob/main/.video/Ferris%20Wheel%20-%2018386.mp4?raw=true)
+   * Audio<sup>[[2]](#acknowledgments)</sup>: [Chuzausen_-\_06\_-_Raro_Bueno.mp3](https://github.com/atet/codec/blob/main/.video/Chuzausen_-_06_-_Raro_Bueno.mp3?raw=true)
 * **Remember the path to this folder, e.g. `C:\Users\<USERNAME>\Desktop\Example`**
 
 [![.img/step02a.png](.img/step02a.png)](#nolink)
@@ -246,7 +246,7 @@ Threads | Processing FPS | Time Elapsed (sec.) | Command
 4 | 8.1 | **137 (25% less time)** | `ffmpeg -i "From The Air - 9798.mp4" -s 1920x1080 -threads 4 "test.mp4"`
 
 * Having 2x cores doesn't necessarily mean a 2x increase in video processing power, _but it will help_, so do your research if this is important to you
-* If you want to try this yourself, you can download the video here<sup>[[4]](#acknowledgments)</sup> (this is a big file @ 99 MB!): [From The Air - 9798.mp4](https://github.com/atet/learn/blob/master/codec/.video/From%20The%20Air%20-%209798.mp4?raw=true) 
+* If you want to try this yourself, you can download the video here<sup>[[4]](#acknowledgments)</sup> (this is a big file @ 99 MB!): [From The Air - 9798.mp4](https://github.com/atet/codec/blob/main/.video/From%20The%20Air%20-%209798.mp4?raw=true) 
 
 ### **3: Bit Rate**
 
